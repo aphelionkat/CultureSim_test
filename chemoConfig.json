@@ -1,0 +1,29 @@
+{  
+   "simType":"chemostat",
+
+   "numGenes":3,
+   "geneLength":4,
+   "numLetters":5,
+   "idealGenes":[[5,5,5,5],[5,5,5,5],[5,5,5,5]],
+   "initPopulations":[
+       {"genes":[[3,3,3,3],[2,1,1,1],[3,3,3,3]], "count":50},
+       {"genes":[[2,1,1,1],[3,3,3,3],[1,1,1,1]], "count":50}
+     ],
+   
+   "fitnessFunction":"#{GF1} * #{GF2} * (1-(0.1*(1-#{GF3})))",
+   "ffComplexity":3,
+   
+   "mutRate":0.01,
+   "feedingConst":500,
+   "feedingMult":0.1,
+   
+   "runtime":2000,
+   
+   "clockSeed":true,
+   "randSeed":0,
+   
+   "cultureLiquid":1000,
+   "foodItrval":1,
+   "liquidAdded":10,
+   "foodConcn":5
+}
